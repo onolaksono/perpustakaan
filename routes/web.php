@@ -28,3 +28,4 @@ Route::group(['middleware' => ['web','auth']], function(){
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('data_buku', 'BukuController@index');
+Route::get('data_anggota', 'AnggotaController@index');

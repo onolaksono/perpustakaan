@@ -97,7 +97,7 @@
                         <li class="nav-label">Menu</li>                       
                         <li><a href="{{ url('home') }}"><i class="fa fa-tachometer"></i><span class="hide-menu">Dashboard</span></a></li>
                         <li><a href="{{ url('data_buku') }}"><i class="fa fa-book"></i><span class="hide-menu">Data Buku</span></a></li>
-                        <li><a href="#"><i class="fa fa-user-o"></i><span class="hide-menu">Data Anggota</span></a></li>
+                        <li><a href="{{ url('data_anggota') }}"><i class="fa fa-user-o"></i><span class="hide-menu">Data Anggota</span></a></li>
                         <li><a href="#"><i class="fa fa-server"></i><span class="hide-menu">Data Transaksi</span></a></li>                        
                     </ul>
                 </nav>
