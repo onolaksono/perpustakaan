@@ -10,4 +10,8 @@ class AnggotaController extends Controller
     {
         return view('admin.list_anggota');
     }
+    public function formAnggota()
+    {
+        return view('admin.form_anggota');
+    }
 }

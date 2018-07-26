@@ -98,7 +98,33 @@
                         <li><a href="{{ url('home') }}"><i class="fa fa-tachometer"></i><span class="hide-menu">Dashboard</span></a></li>
                         <li><a href="{{ url('data_buku') }}"><i class="fa fa-book"></i><span class="hide-menu">Data Buku</span></a></li>
                         <li><a href="{{ url('data_anggota') }}"><i class="fa fa-user-o"></i><span class="hide-menu">Data Anggota</span></a></li>
-                        <li><a href="#"><i class="fa fa-server"></i><span class="hide-menu">Data Transaksi</span></a></li>                        
+                        <li><a href="{{ url('data_transaksi') }}"><i class="fa fa-server"></i><span class="hide-menu">Data Transaksi</span></a></li>   
+                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-square"></i><span class="hide-menu"> Referensi</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="{{ url('jenis_pustaka') }}">Jenis Pustaka</a></li>
+                                <li><a href="{{ url('kelas') }}">Kelas Pustaka</a></li>
+                                <li><a href="#">Lokasi Pustaka</a></li>
+                            </ul>
+                        </li>    
+                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-server"></i><span class="hide-menu">Laporan</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a class="has-arrow" href="#">Pengunjung</a>
+                                    <ul aria-expanded="false" class="collapse">
+                                        <li><a href="{{ url('lpengunjung_hari') }}">Pengunjung Hari Ini</a></li>
+                                        <li><a href="{{ url('lpengunjung_bulan') }}">Pengunjung Bulan Ini</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="has-arrow" href="#">Peminjaman</a>
+                                    <ul aria-expanded="false" class="collapse">
+                                        <li><a href="{{ url('lpeminjaman_hari') }}">Peminjaman Hari Ini</a></li>
+                                        <li><a href="{{ url('lpeminjaman_bulan') }}">Peminjaman Bulan Ini</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{{ url('lbuku') }}">Buku</a></li>
+                                <li><a href="{{ url('langgota') }}">Anggota</a></li>
+                                <li><a href="{{ url('lstatistik_terbanyak') }}">Statistik Terbanyak</a></li>
+                            </ul>
+                        </li>                 
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->

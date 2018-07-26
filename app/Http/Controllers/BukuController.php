@@ -10,4 +10,9 @@ class BukuController extends Controller
     {
         return view('admin.list_buku');
     }
+
+    public function formBuku()
+    {
+        return view('admin.form_buku');
+    }
 }

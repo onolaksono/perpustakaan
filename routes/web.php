@@ -28,4 +28,11 @@ Route::group(['middleware' => ['web','auth']], function(){
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('data_buku', 'BukuController@index');
+Route::get('data_buku/tambah', 'BukuController@formBuku');
 Route::get('data_anggota', 'AnggotaController@index');
+Route::get('data_anggota/tambah', 'AnggotaController@formAnggota');
+Route::resource('data_transaksi', 'TransaksiController');
+
+// page referensi
+Route::resource('jenis_pustaka', 'JenisController');
+Route::resource('kelas', 'KelasController');

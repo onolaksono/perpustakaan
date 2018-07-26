@@ -25,6 +25,7 @@
                             <div class="card-body">
                                 <!-- <h4 class="card-title">Data Buku</h4>
                                 <h6 class="card-subtitle">List Buku</h6> -->
+                                <a href="{{ url('data_anggota/tambah') }}"><button type="button" class="btn btn-primary m-b-10 m-l-5"><i class="fa fa-plus-circle"></i> Tambah Buku</button></a>
                                 <div class="table-responsive m-t-40">
                                     <table id="myTable" class="table table-bordered table-striped">
                                         <thead>
